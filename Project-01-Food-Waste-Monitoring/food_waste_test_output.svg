@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1150" viewBox="0 0 1500 1150">
+<rect width="1500" height="1150" fill="#111827"/>
+<rect x="24" y="24" width="1452" height="1102" rx="22" fill="#0b1220" stroke="#374151" stroke-width="2"/>
+<path d="M46 24 H1454 Q1476 24 1476 46 V85 H24 V46 Q24 24 46 24Z" fill="#1f2937"/>
+<circle cx="56" cy="55" r="8" fill="#f87171"/><circle cx="86" cy="55" r="8" fill="#fbbf24"/><circle cx="116" cy="55" r="8" fill="#34d399"/>
+<text x="170" y="61" font-family="Arial,sans-serif" font-size="29" fill="#f9fafb">Food Waste Monitoring System — Test Output</text>
+<text x="50" y="125" font-family="Arial,sans-serif" font-size="17" fill="#93c5fd">SIMULATED INPUT TEST • 7 days • syllabus-level Python</text>
+<g font-family="monospace" font-size="23" fill="#d1d5db">
+<text x="52" y="175">$ python food_waste_monitoring.py</text>
+<text x="52" y="204"> </text>
+<text x="52" y="233">Day 1</text><text x="52" y="262">Leftover meals: 5</text><text x="52" y="291">Wastage percentage: 5.0 %</text><text x="52" y="320">Food waste is within the limit.</text>
+<text x="52" y="378">Day 2</text><text x="52" y="407">Leftover meals: 15</text><text x="52" y="436">Wastage percentage: 15.0 %</text><text x="52" y="465" fill="#fca5a5">Warning: High food waste!</text>
+<text x="52" y="523">Day 3</text><text x="52" y="552">Leftover meals: 20</text><text x="52" y="581">Wastage percentage: 10.0 %</text><text x="52" y="610">Food waste is within the limit.</text>
+<text x="52" y="668">Day 4</text><text x="52" y="697">Leftover meals: 0</text><text x="52" y="726">Wastage percentage: 0.0 %</text><text x="52" y="755">Food waste is within the limit.</text>
+<text x="52" y="813">Day 5</text><text x="52" y="842">Leftover meals: 10</text><text x="52" y="871">Wastage percentage: 50.0 %</text><text x="52" y="900" fill="#fca5a5">Warning: High food waste!</text>
+<text x="780" y="233">Day 6</text><text x="780" y="262">Leftover meals: 0</text><text x="780" y="291">Wastage percentage: 0.0 %</text><text x="780" y="320">Food waste is within the limit.</text>
+<text x="780" y="378">Day 7</text><text x="780" y="407">Leftover meals: 10</text><text x="780" y="436">Wastage percentage: 100.0 %</text><text x="780" y="465" fill="#fca5a5">Warning: High food waste!</text>
+<text x="780" y="523" fill="#93c5fd">--- WEEKLY SUMMARY ---</text>
+<text x="780" y="552" fill="#86efac">Meals prepared: 560</text>
+<text x="780" y="581" fill="#86efac">Meals served: 500</text>
+<text x="780" y="610" fill="#86efac">Leftover meals: 60</text>
+<text x="780" y="639" fill="#86efac">Overall wastage: 10.714285714285714 %</text>
+</g>
+<text x="52" y="1080" font-family="Arial,sans-serif" font-size="17" fill="#9ca3af">Note: This is a locally executed test-output capture, not a TinyFish browser screenshot.</text>
+</svg>
