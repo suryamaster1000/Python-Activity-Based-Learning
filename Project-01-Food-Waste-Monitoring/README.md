@@ -34,26 +34,54 @@ Canteens may prepare more meals than are served, causing food waste. This progra
 8. Display weekly totals and overall wastage percentage.
 
 ## 6. Python program
-See the file food_waste_monitoring.py in this folder.
+Run `food_waste_monitoring.py` for the interactive seven-day program. The reusable `calculate_wastage()` function makes the calculation easier to test automatically.
 
-## 7. Test cases
-| Prepared | Served | Leftovers | Wastage | Expected result |
-|---:|---:|---:|---:|---|
-| 100 | 95 | 5 | 5% | Within limit |
-| 100 | 85 | 15 | 15% | High waste |
-| 200 | 180 | 20 | 10% | Within limit |
-| 50 | 50 | 0 | 0% | No leftovers |
-| 100 | 120 | — | — | Invalid input |
-| 0 | 0 | — | — | Invalid input |
+## 7. Manual test cases
+Run the program and enter each prepared/served pair on a day. To test invalid inputs, enter the invalid pair and confirm that the program asks again.
 
-## 8. Learning outcome
-This project practices variables, numeric input, arithmetic, loops, input validation, and if-else decisions.
+| Prepared | Served | Expected result |
+|---:|---:|---|
+| 100 | 95 | 5 leftovers; 5% wastage; within limit |
+| 100 | 85 | 15 leftovers; 15% wastage; high-waste warning |
+| 200 | 180 | 20 leftovers; 10% wastage; within limit |
+| 50 | 50 | 0 leftovers; 0% wastage |
+| 100 | 120 | Invalid input; ask again |
+| 0 | 0 | Invalid input; ask again |
+| Type `abc` | — | Invalid input; ask again |
 
-## 9. Conclusion
+## 8. Automated testing with pytest
+
+### Install pytest
+Open a terminal in this project folder and run:
+
+```bash
+python -m pip install pytest
+```
+
+### Run the automated tests
+From this folder, run:
+
+```bash
+python -m pytest -v
+```
+
+The test file `test_food_waste_monitoring.py` checks valid calculations, the 10% boundary, zero waste, 100% waste, and invalid values. A successful run should report **9 passed**.
+
+## 9. Learning outcome
+This project practices variables, numeric input, arithmetic, loops, input validation, if-else decisions, reusable functions, and automated testing.
+
+## 10. Conclusion
 The program summarizes food usage and helps identify days when meal preparation could be better matched to demand.
 
-## 10. Screenshots
-After running the program, capture screenshots showing daily calculations and the weekly summary. Add them to a screenshots folder before final submission.
+## 11. Screenshots
+For the submission, capture:
+- The program showing a normal result (for example, 100 prepared and 95 served).
+- The program showing the high-waste warning (for example, 100 prepared and 85 served).
+- The weekly summary.
+- The terminal output after running `python -m pytest -v`.
 
-## Run
+## Run the program
+
+```bash
 python food_waste_monitoring.py
+```
