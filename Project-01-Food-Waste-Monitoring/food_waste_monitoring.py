@@ -1,43 +1,52 @@
 LIMIT = 10
 
+prepared_list = []
+served_list = []
+leftover_list = []
+wastage_list = []
 
-def calculate_wastage(prepared, served):
-    if prepared <= 0 or served < 0 or served > prepared:
-        raise ValueError("Enter valid meal counts.")
+for day in range(1, 8):
+    print("\nDay", day)
+
+    prepared = int(input("Meals prepared: "))
+    while prepared <= 0:
+        print("Meals prepared must be greater than zero.")
+        prepared = int(input("Meals prepared: "))
+
+    served = int(input("Meals served: "))
+    while served < 0 or served > prepared:
+        print("Meals served must be between 0 and", prepared)
+        served = int(input("Meals served: "))
+
     leftover = prepared - served
-    return leftover, leftover / prepared * 100
+    wastage = leftover / prepared * 100
 
+    prepared_list.append(prepared)
+    served_list.append(served)
+    leftover_list.append(leftover)
+    wastage_list.append(wastage)
 
-def main():
-    total_prepared = total_served = total_leftover = 0
+    print("Leftover meals:", leftover)
+    print("Wastage percentage:", round(wastage, 2), "%")
 
-    for day in range(1, 8):
-        print(f"\nDay {day}")
+    if wastage > LIMIT:
+        print("Warning: High food waste!")
+    else:
+        print("Food waste is within the limit.")
 
-        while True:
-            try:
-                prepared = int(input("Meals prepared: "))
-                served = int(input("Meals served: "))
-                leftover, wastage = calculate_wastage(prepared, served)
-                break
-            except ValueError:
-                print("Invalid input. Please try again.")
+total_prepared = 0
+total_served = 0
+total_leftover = 0
 
-        print("Leftovers:", leftover)
-        print(f"Wastage: {wastage:.2f}%")
-        print("Warning: High food waste!" if wastage > LIMIT
-              else "Food waste is within the limit.")
+for day in range(7):
+    total_prepared = total_prepared + prepared_list[day]
+    total_served = total_served + served_list[day]
+    total_leftover = total_leftover + leftover_list[day]
 
-        total_prepared += prepared
-        total_served += served
-        total_leftover += leftover
+overall_wastage = total_leftover / total_prepared * 100
 
-    print("\n--- WEEKLY SUMMARY ---")
-    print("Meals prepared:", total_prepared)
-    print("Meals served:", total_served)
-    print("Leftovers:", total_leftover)
-    print(f"Overall wastage: {total_leftover / total_prepared * 100:.2f}%")
-
-
-if __name__ == "__main__":
-    main()
+print("\n--- WEEKLY SUMMARY ---")
+print("Meals prepared:", total_prepared)
+print("Meals served:", total_served)
+print("Leftover meals:", total_leftover)
+print("Overall wastage:", round(overall_wastage, 2), "%")
