@@ -9,36 +9,43 @@ A canteen may prepare more meals than people eat. This program records meals pre
 
 ## 2. Python topics used
 
-This version uses only topics from the completed Units I–III:
+This version uses beginner-level concepts from Units I–III:
 
 - Variables and numeric data types
-- `int()` for input conversion
-- Arithmetic operators
-- `if-else` and logical operators
-- `for` loops with `range()`
-- `while` loops
-- Lists, indexing, and `append()`
-- `round()` to display percentages neatly
+- Basic input with input() and int()
+- Arithmetic and comparison operators
+- if-else and logical operators
+- for loops with range()
+- while loops for value validation
+- Lists, indexing, and append()
+- Basic output with print()
 
-It does not use user-defined functions, `try-except`, imports, classes, or advanced Python features.
+It does not use imports, user-defined functions, classes, or try-except.
 
-## 3. Formula
+## 3. Objectives and assumptions
+
+- Record prepared and served meals for seven days.
+- Calculate leftover meals and wastage percentages.
+- Warn when daily wastage is greater than 10%.
+- Show weekly totals and overall wastage.
+- Input values are whole numbers. Prepared meals must be greater than zero; served meals must be from zero through the prepared count.
+
+## 4. Formula
 
 - Leftover meals = Meals prepared - Meals served
 - Wastage percentage = (Leftover meals / Meals prepared) * 100
 
-## 4. Algorithm
+## 5. Algorithm and pseudocode
 
-1. Create empty lists to store daily meal details.
-2. Repeat for seven days.
-3. Read the number of meals prepared. Ask again if it is not greater than zero.
-4. Read the number of meals served. Ask again if it is less than zero or more than meals prepared.
-5. Calculate leftovers and wastage percentage.
-6. Store the daily values in lists using `append()`.
-7. Use `if-else` to show a warning when wastage is more than 10%.
-8. Use a loop to calculate weekly totals and display the summary.
+See [algorithm-pseudocode.md](algorithm-pseudocode.md).
 
-## 5. Run the program
+## 6. Flowchart
+
+![Food Waste Monitoring System flowchart](flowchart.svg)
+
+Open [flowchart.svg](flowchart.svg) to view it separately.
+
+## 7. Run the program
 
 Open a terminal in this folder and run:
 
@@ -46,11 +53,9 @@ Open a terminal in this folder and run:
 python food_waste_monitoring.py
 ```
 
-Enter whole numbers when asked. The program validates meal counts, but letters such as `abc` are not accepted as numeric input.
+Enter whole numbers when prompted. The program uses beginner-level validation loops; it expects numeric input and does not handle letters entered where a number is required because exception handling is outside this project's syllabus scope.
 
-## 6. Manual test cases
-
-Try these prepared/served values on a day and compare the result:
+## 8. Manual test cases
 
 | Prepared | Served | Expected result |
 |---:|---:|---|
@@ -63,13 +68,15 @@ Try these prepared/served values on a day and compare the result:
 
 For the weekly summary, enter valid values for all seven days.
 
-## 7. Learning outcome
+## 9. Screenshots for submission
 
-This project practices variables, input conversion, arithmetic, conditions, loops, lists, and list indexing using beginner-level Python.
+Actual terminal screenshots still need to be captured after running the program. Capture:
+- One normal result (100 prepared, 95 served)
+- One high-waste warning (100 prepared, 85 served)
+- The completed seven-day weekly summary
 
-## 8. Screenshots for submission
+Do not treat the SVG flowchart or sample-output artwork as a terminal screenshot.
 
-Capture:
-- A normal result (100 prepared, 95 served)
-- A high-waste warning (100 prepared, 85 served)
-- The weekly summary
+## 10. Conclusion
+
+This project practices input/output, variables, arithmetic, conditions, loops, lists, and simple validation to monitor food waste over one week.
