@@ -3,7 +3,6 @@ LIMIT = 10
 prepared_list = []
 served_list = []
 leftover_list = []
-wastage_list = []
 
 for day in range(1, 8):
     print("\nDay", day)
@@ -24,10 +23,9 @@ for day in range(1, 8):
     prepared_list.append(prepared)
     served_list.append(served)
     leftover_list.append(leftover)
-    wastage_list.append(wastage)
 
     print("Leftover meals:", leftover)
-    print("Wastage percentage:", round(wastage, 2), "%")
+    print("Wastage percentage:", wastage, "%")
 
     if wastage > LIMIT:
         print("Warning: High food waste!")
@@ -49,4 +47,4 @@ print("\n--- WEEKLY SUMMARY ---")
 print("Meals prepared:", total_prepared)
 print("Meals served:", total_served)
 print("Leftover meals:", total_leftover)
-print("Overall wastage:", round(overall_wastage, 2), "%")
+print("Overall wastage:", overall_wastage, "%")
