@@ -69,7 +69,7 @@ The file [screenshots/exam_evaluation_test_output.svg](screenshots/exam_evaluati
 ## 9. Python concepts used
 
 - Variables and numeric values
-- Strings and string methods: upper(), split(), and strip()
+- String operations with `upper()` and `split()`
 - Lists and nested lists
 - List indexing and append()
 - Arithmetic, comparison, and logical operators
