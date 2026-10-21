@@ -19,3 +19,5 @@ The audit checks:
 Commands in a project's `screenshots/README.md` are intentionally resolved from that project's folder, because that is where the instructions tell students to run them.
 
 The audit uses example input data and is an automated sanity check, not a substitute for instructor review, extra edge-case testing, or genuine terminal screenshots.
+
+External URLs are not fetched by this check; it verifies local repository paths. Review external links separately before submission.
