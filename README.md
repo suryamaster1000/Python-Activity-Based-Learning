@@ -10,6 +10,8 @@ A collection of beginner-friendly Python case studies prepared for the Python AB
 4. [Multi-Stage Examination Eligibility System](Project-04-Multi-Stage-Examination-Eligibility/README.md) — Case Study 39: check attendance, laboratory completion, internal marks, and fee clearance and report all unmet requirements.
 5. [Tuple-Based Product Catalogue Audit](Project-05-Tuple-Based-Product-Catalogue-Audit/README.md) — Case Study 49: use tuples to audit product IDs, details, prices, and stock.
 6. [Student Feedback Sentiment Scoring](Project-06-Student-Feedback-Sentiment-Scoring/README.md) — Case Study 34: score feedback using a documented positive and negative keyword list.
+7. [Student Marks Matrix Analysis](Project-07-Student-Marks-Matrix-Analysis/README.md) — Case Study 42: analyse student marks by rows and subjects using columns.
+8. [Weekly Electricity Consumption Matrix](Project-08-Weekly-Electricity-Consumption-Matrix/README.md) — Case Study 45: summarize daily kWh readings across weeks and flag high-use days.
 
 ## Repository structure
 
@@ -20,6 +22,8 @@ A collection of beginner-friendly Python case studies prepared for the Python AB
 - Project-04-Multi-Stage-Examination-Eligibility/ — code, algorithm, pseudocode, flowchart, test cases, sample output preview, and documentation for Case Study 39
 - Project-05-Tuple-Based-Product-Catalogue-Audit/ — code, algorithm, pseudocode, flowchart, test cases, sample output preview, and documentation for Case Study 49
 - Project-06-Student-Feedback-Sentiment-Scoring/ — code, algorithm, pseudocode, flowchart, test cases, sample output preview, and documentation for Case Study 34
+- Project-07-Student-Marks-Matrix-Analysis/ — code, algorithm, pseudocode, flowchart, test cases, sample output preview, and documentation for Case Study 42
+- Project-08-Weekly-Electricity-Consumption-Matrix/ — code, algorithm, pseudocode, flowchart, test cases, sample output preview, and documentation for Case Study 45
 
 ## Run Project 01
 
@@ -62,6 +66,22 @@ python Project-06-Student-Feedback-Sentiment-Scoring/student_feedback_sentiment_
 ~~~
 
 Project 06 uses editable word lists and a simple score (positive matches minus negative matches). It does not understand context, sarcasm, or negation, so results need human review.
+
+## Run Project 07
+
+~~~text
+python Project-07-Student-Marks-Matrix-Analysis/student_marks_matrix_analysis.py
+~~~
+
+Project 07 uses an example pass mark of 40 out of 100 in every subject. Confirm the actual grading rules with faculty.
+
+## Run Project 08
+
+~~~text
+python Project-08-Weekly-Electricity-Consumption-Matrix/weekly_electricity_consumption_matrix.py
+~~~
+
+Project 08 flags daily readings above an example threshold of 15 kWh. This is an adjustable demonstration setting, not an official utility rule.
 
 The programs use beginner-level Python concepts from the assigned syllabus. See each project's README for assumptions, run instructions, and test cases.
 
