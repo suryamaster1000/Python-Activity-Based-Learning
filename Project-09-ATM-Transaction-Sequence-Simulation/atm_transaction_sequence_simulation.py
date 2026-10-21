@@ -12,7 +12,8 @@ deposit_count = 0
 withdrawal_count = 0
 declined_count = 0
 
-while True:
+choice = "0"
+while choice != "4":
     print("\nATM MENU")
     print("1. Deposit")
     print("2. Withdraw")
@@ -60,7 +61,6 @@ while True:
 
     elif choice == "4":
         print("ATM session ended.")
-        break
 
     else:
         print("Invalid menu option. Choose 1, 2, 3, or 4.")
