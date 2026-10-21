@@ -12,6 +12,8 @@ A collection of beginner-friendly Python case studies prepared for the Python AB
 6. [Student Feedback Sentiment Scoring](Project-06-Student-Feedback-Sentiment-Scoring/README.md) — Case Study 34: score feedback using a documented positive and negative keyword list.
 7. [Student Marks Matrix Analysis](Project-07-Student-Marks-Matrix-Analysis/README.md) — Case Study 42: analyse student marks by rows and subjects using columns.
 8. [Weekly Electricity Consumption Matrix](Project-08-Weekly-Electricity-Consumption-Matrix/README.md) — Case Study 45: summarize daily kWh readings across weeks and flag high-use days.
+9. [ATM Transaction Sequence Simulation](Project-09-ATM-Transaction-Sequence-Simulation/README.md) — Case Study 13: simulate deposits, withdrawals, balance enquiries, and a transaction history.
+10. [Energy Conservation Before-and-After Analysis](Project-10-Energy-Conservation-Before-After-Analysis/README.md) — Case Study 68: compare average daily energy use before and after changes.
 
 ## Repository structure
 
@@ -24,6 +26,8 @@ A collection of beginner-friendly Python case studies prepared for the Python AB
 - Project-06-Student-Feedback-Sentiment-Scoring/ — code, algorithm, pseudocode, flowchart, test cases, sample output preview, and documentation for Case Study 34
 - Project-07-Student-Marks-Matrix-Analysis/ — code, algorithm, pseudocode, flowchart, test cases, sample output preview, and documentation for Case Study 42
 - Project-08-Weekly-Electricity-Consumption-Matrix/ — code, algorithm, pseudocode, flowchart, test cases, sample output preview, and documentation for Case Study 45
+- Project-09-ATM-Transaction-Sequence-Simulation/ — code, algorithm, pseudocode, flowchart, test cases, sample output preview, and documentation for Case Study 13
+- Project-10-Energy-Conservation-Before-After-Analysis/ — code, algorithm, pseudocode, flowchart, test cases, sample output preview, and documentation for Case Study 68
 
 ## Run Project 01
 
@@ -82,6 +86,22 @@ python Project-08-Weekly-Electricity-Consumption-Matrix/weekly_electricity_consu
 ~~~
 
 Project 08 flags daily readings above an example threshold of 15 kWh. This is an adjustable demonstration setting, not an official utility rule.
+
+## Run Project 09
+
+~~~text
+python Project-09-ATM-Transaction-Sequence-Simulation/atm_transaction_sequence_simulation.py
+~~~
+
+Project 09 is a simulation only: it does not connect to a bank or access real funds.
+
+## Run Project 10
+
+~~~text
+python Project-10-Energy-Conservation-Before-After-Analysis/energy_conservation_before_after_analysis.py
+~~~
+
+Project 10 compares average daily energy use in kWh/day for comparable periods and reports reductions as well as increases.
 
 The programs use beginner-level Python concepts from the assigned syllabus. See each project's README for assumptions, run instructions, and test cases.
 
