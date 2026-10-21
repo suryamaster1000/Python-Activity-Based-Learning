@@ -58,7 +58,7 @@ Open a terminal in this folder and run:
 python string_based_exam_evaluation.py
 ~~~
 
-First, enter the answer key separated by spaces. Then enter the number of students. For each student, enter their name and one answer per question. Use a dash (-) for a blank answer.
+First, enter the answer key separated by spaces. Then enter the number of students. For each student, enter their name and one answer per question. Use a dash (-) for a empty answer.
 
 ## 8. Test cases and sample output
 
