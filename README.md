@@ -24,25 +24,25 @@ A collection of beginner-friendly Python case studies prepared for the Python AB
 ## Run Project 01
 
 ~~~text
-python food_waste_monitoring.py
+python Project-01-Food-Waste-Monitoring/food_waste_monitoring.py
 ~~~
 
 ## Run Project 02
 
 ~~~text
-python password_policy_validation.py
+python Project-02-Password-Policy-Validation/password_policy_validation.py
 ~~~
 
 ## Run Project 03
 
 ~~~text
-python string_based_exam_evaluation.py
+python Project-03-String-Based-Examination-Answer-Evaluation/string_based_exam_evaluation.py
 ~~~
 
 ## Run Project 04
 
 ~~~text
-python multi_stage_exam_eligibility.py
+python Project-04-Multi-Stage-Examination-Eligibility/multi_stage_exam_eligibility.py
 ~~~
 
 Project 04 uses demonstration assumptions: attendance at least 75%, at least one required lab completed, internal marks at least 40 out of 100, and fees cleared. These are not official university rules.
@@ -50,7 +50,7 @@ Project 04 uses demonstration assumptions: attendance at least 75%, at least one
 ## Run Project 05
 
 ~~~text
-python tuple_product_catalogue_audit.py
+python Project-05-Tuple-Based-Product-Catalogue-Audit/tuple_product_catalogue_audit.py
 ~~~
 
 Project 05 flags duplicate IDs, blank name/category fields, invalid prices, negative stock, out-of-stock items, and low stock (1–5 units). These are example audit rules.
@@ -58,7 +58,7 @@ Project 05 flags duplicate IDs, blank name/category fields, invalid prices, nega
 ## Run Project 06
 
 ~~~text
-python student_feedback_sentiment_scoring.py
+python Project-06-Student-Feedback-Sentiment-Scoring/student_feedback_sentiment_scoring.py
 ~~~
 
 Project 06 uses editable word lists and a simple score (positive matches minus negative matches). It does not understand context, sarcasm, or negation, so results need human review.
