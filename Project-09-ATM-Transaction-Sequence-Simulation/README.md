@@ -45,7 +45,7 @@ Open a terminal in this folder and run:
 python atm_transaction_sequence_simulation.py
 ~~~
 
-Enter a simulated starting balance, then choose menu options 1–4 until you choose Exit.
+Enter a simulated starting balance, then choose menu options 1–4 until you choose Exit. Amounts are displayed using Python's default numeric representation (for example, `1300.0`).
 
 ## 7. Test cases and sample output
 
@@ -59,7 +59,7 @@ See [test_cases.md](test_cases.md). The file [screenshots/sample_output_preview.
 - `if`, `elif`, and `else`
 - Lists and `append()`
 - Comparisons and arithmetic
-- String formatting with `format()`
+- String concatenation with `+` and numeric-to-string conversion with `str()`
 
 No imports, user-defined functions, classes, external packages, or `try-except` are used.
 
