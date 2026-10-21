@@ -14,9 +14,9 @@ catalogue = []
 
 for i in range(product_count):
     print("\nEnter details for product", i + 1)
-    product_id = input("Product ID: ").strip()
-    product_name = input("Product name: ").strip()
-    category = input("Category: ").strip()
+    product_id = input("Product ID: ")
+    product_name = input("Product name: ")
+    category = input("Category: ")
     price = float(input("Price: "))
     stock = int(input("Stock quantity: "))
 
@@ -36,11 +36,7 @@ low_stock_count = 0
 
 for i in range(len(catalogue)):
     product = catalogue[i]
-    product_id = product[0]
-    product_name = product[1]
-    category = product[2]
-    price = product[3]
-    stock = product[4]
+    product_id, product_name, category, price, stock = product
     issues = []
 
     # Compare this ID with the product IDs entered before it.
@@ -74,9 +70,11 @@ for i in range(len(catalogue)):
     if len(issues) == 0:
         status = "OK"
     else:
-        status = ", ".join(issues)
+        status = issues[0]
+    for issue_number in range(1, len(issues)):
+        status = status + ", " + issues[issue_number]
 
-    print(product_id, "|", product_name, "| Price: Rs.", format(price, ".2f"),
+    print(product_id, "|", product_name, "| Price: Rs.", price,
           "| Stock:", stock, "|", status)
 
 print("\nAUDIT SUMMARY")
