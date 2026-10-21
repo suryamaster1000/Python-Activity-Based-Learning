@@ -27,7 +27,7 @@ total_negative_matches = 0
 
 for i in range(feedback_count):
     print("\nEnter feedback", i + 1)
-    feedback = input("Feedback: ").strip()
+    feedback = input("Feedback: ")
 
     # Replace basic punctuation so words at sentence boundaries are counted.
     feedback_text = feedback.lower()
@@ -64,7 +64,7 @@ for i in range(feedback_count):
         sentiment = "NEUTRAL"
         neutral_feedback_count = neutral_feedback_count + 1
 
-    result = (feedback, positive_matches, negative_matches, score, sentiment)
+    result = (feedback, positive_matches, negative_matches) + (score, sentiment)
     results.append(result)
 
     total_positive_matches = total_positive_matches + positive_matches
