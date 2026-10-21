@@ -18,10 +18,10 @@ not_eligible_count = 0
 for student_number in range(1, number_of_students + 1):
     print("\nStudent", student_number)
 
-    student_name = input("Enter student name: ").strip()
+    student_name = input("Enter student name: ")
     while student_name == "":
         print("Student name cannot be blank.")
-        student_name = input("Enter student name: ").strip()
+        student_name = input("Enter student name: ")
 
     attendance = int(input("Enter attendance percentage (0-100): "))
     while attendance < 0 or attendance > 100:
@@ -29,11 +29,11 @@ for student_number in range(1, number_of_students + 1):
         attendance = int(input("Enter attendance percentage (0-100): "))
 
     lab_status = input("Are all required laboratory activities completed? (Y/N): ")
-    lab_status = lab_status.strip().upper()
+    lab_status = lab_status.upper()
     while lab_status not in YES_NO_OPTIONS:
         print("Please enter Y for yes or N for no.")
         lab_status = input("Are all required laboratory activities completed? (Y/N): ")
-        lab_status = lab_status.strip().upper()
+        lab_status = lab_status.upper()
 
     internal_marks = int(input("Enter internal marks out of 50: "))
     while internal_marks < 0 or internal_marks > MAX_INTERNAL_MARKS:
@@ -41,11 +41,11 @@ for student_number in range(1, number_of_students + 1):
         internal_marks = int(input("Enter internal marks out of 50: "))
 
     fee_status = input("Are the required fees cleared? (Y/N): ")
-    fee_status = fee_status.strip().upper()
+    fee_status = fee_status.upper()
     while fee_status not in YES_NO_OPTIONS:
         print("Please enter Y for yes or N for no.")
         fee_status = input("Are the required fees cleared? (Y/N): ")
-        fee_status = fee_status.strip().upper()
+        fee_status = fee_status.upper()
 
     unmet_requirements = []
 
