@@ -89,7 +89,7 @@ for i in range(week_count):
 
         if units > high_usage_limit:
             high_usage_days = high_usage_days + 1
-            print("Week", i + 1, days[j], ":", format(units, ".2f"), "kWh")
+            print("Week", i + 1, days[j], ":", units, "kWh")
 
 if high_usage_days == 0:
     print("No days exceeded the high-use alert limit.")
