@@ -11,14 +11,14 @@
 
 **Expected report**
 
-- Week 1 total: 70.00 kWh; daily average: 10.00 kWh
-- Week 2 total: 95.00 kWh; daily average: 13.57 kWh
-- Change from Week 1 to Week 2: increase of 25.00 kWh
-- Percentage change: 35.71%
-- Total electricity consumption: 165.00 kWh
-- Average daily consumption: 11.79 kWh
-- Highest daily consumption: 18.00 kWh — Week 2 Thursday
-- Lowest daily consumption: 7.00 kWh — Week 1 Wednesday
+- Week 1 total: 70.0 kWh; daily average: 10.0 kWh
+- Week 2 total: 95.0 kWh; daily average: 13.571428571428571 kWh
+- Change from Week 1 to Week 2: increase of 25.0 kWh
+- Percentage change: 35.714285714285715%
+- Total electricity consumption: 165.0 kWh
+- Average daily consumption: 11.785714285714286 kWh
+- Highest daily consumption: 18.0 kWh — Week 2 Thursday
+- Lowest daily consumption: 7.0 kWh — Week 1 Wednesday
 - Days above the example 15 kWh alert limit: 2 (Week 2 Wednesday and Thursday)
 
 ## Additional tests
@@ -32,4 +32,4 @@
 | 6 | Daily reading equals 15 | It does not trigger the alert because only readings above 15 trigger it |
 | 7 | Week count is 0 | Program asks for a count of at least 1 again |
 
-The project expects valid numeric input where a number is requested. The alert threshold is an example setting and can be adjusted.
+Calculated values are printed with Python's default float representation rather than rounded to two decimal places. The project expects valid numeric input where a number is requested. The alert threshold is an example setting and can be adjusted.
