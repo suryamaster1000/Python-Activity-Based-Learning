@@ -29,7 +29,7 @@ These are classroom demonstration rules, not an official institutional grading p
 1. Marks for each subject are from 0 to 100.
 2. The example pass mark is 40 in every subject.
 3. A student passes only if the mark in every subject is at least 40.
-4. Student and subject names cannot be blank.
+4. Student and subject names cannot be empty.
 5. The program expects valid numeric input when a number is requested.
 6. Marks are entered as numbers; decimals are accepted.
 7. Equal highest or lowest marks are reported using the first occurrence found by the matrix scan.
@@ -54,7 +54,7 @@ Open a terminal in this project folder and run:
 python student_marks_matrix_analysis.py
 ~~~
 
-Enter the student count, subject count, subject names, student names, and marks when requested.
+Enter the student count, subject count, subject names, student names, and marks when requested. Numeric calculations are displayed using Python's default numeric representation, without rounding to a fixed number of decimal places.
 
 ## 8. Test cases and sample output
 
@@ -68,7 +68,7 @@ See [test_cases.md](test_cases.md). The file [screenshots/sample_output_preview.
 - Nested `for` loops
 - `while` loops for basic validation
 - `if`, `else`, comparison, and arithmetic operators
-- Formatting numeric output with `format()`
+- Numeric calculations and output with `print()`
 
 No imports, user-defined functions, classes, external packages, or `try-except` are used.
 
