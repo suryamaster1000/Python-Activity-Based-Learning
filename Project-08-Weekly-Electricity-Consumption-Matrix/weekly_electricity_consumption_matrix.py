@@ -37,24 +37,27 @@ print("High-use alert is set for daily consumption above", high_usage_limit, "kW
 
 for i in range(week_count):
     daily_average = weekly_totals[i] / 7
-    print("Week", i + 1, "| Total:", format(weekly_totals[i], ".2f"),
-          "kWh | Daily average:", format(daily_average, ".2f"), "kWh")
+    print("Week", i + 1, "| Total:", weekly_totals[i],
+          "kWh | Daily average:", daily_average, "kWh")
 
     if i > 0:
         change = weekly_totals[i] - weekly_totals[i - 1]
         if change > 0:
             direction = "increase"
+            change_amount = change
         elif change < 0:
             direction = "decrease"
+            change_amount = 0 - change
         else:
             direction = "no change"
+            change_amount = 0
 
         print("  Compared with Week", i, ":", direction,
-              "of", format(abs(change), ".2f"), "kWh")
+              "of", change_amount, "kWh")
 
         if weekly_totals[i - 1] != 0:
             percent_change = (change / weekly_totals[i - 1]) * 100
-            print("  Percentage change:", format(percent_change, ".2f"), "%")
+            print("  Percentage change:", percent_change, "%")
         else:
             print("  Percentage change: unavailable because previous weekly total is zero")
 
@@ -95,9 +98,9 @@ print("\nOVERALL SUMMARY")
 print("---------------")
 print("Weeks analysed:", week_count)
 print("Days analysed:", week_count * 7)
-print("Total electricity consumption:", format(overall_total, ".2f"), "kWh")
-print("Average daily consumption:", format(overall_total / (week_count * 7), ".2f"), "kWh")
-print("Highest daily consumption:", format(highest_units, ".2f"), "kWh - Week", highest_week, highest_day)
-print("Lowest daily consumption:", format(lowest_units, ".2f"), "kWh - Week", lowest_week, lowest_day)
+print("Total electricity consumption:", overall_total, "kWh")
+print("Average daily consumption:", overall_total / (week_count * 7), "kWh")
+print("Highest daily consumption:", highest_units, "kWh - Week", highest_week, highest_day)
+print("Lowest daily consumption:", lowest_units, "kWh - Week", lowest_week, lowest_day)
 print("Days above the high-use alert limit:", high_usage_days)
 print("\nAnalysis complete. The alert limit is an example setting, not a utility rule.")
