@@ -50,10 +50,10 @@ python Project-03-String-Based-Examination-Answer-Evaluation/string_based_exam_e
 ## Run Project 04
 
 ~~~text
-python Project-04-Multi-Stage-Examination-Eligibility/multi_stage_exam_eligibility.py
+python Project-04-Multi-Stage-Examination-Eligibility/eligibility_checker.py
 ~~~
 
-Project 04 uses demonstration assumptions: attendance at least 75%, at least one required lab completed, internal marks at least 40 out of 100, and fees cleared. These are not official university rules.
+Project 04 uses demonstration assumptions: attendance at least 75%, all required laboratory activities completed, internal marks at least 20 out of 50, and fees cleared. These are not official university rules; confirm the actual requirements with faculty.
 
 ## Run Project 05
 
