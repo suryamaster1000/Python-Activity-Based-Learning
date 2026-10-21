@@ -51,7 +51,7 @@ Open a terminal in this folder and run:
 python energy_conservation_before_after_analysis.py
 ~~~
 
-Enter the number of appliances and before/after average daily readings for each appliance.
+Enter the number of appliances and before/after average daily readings for each appliance. Decimal results are displayed using Python's default numeric representation, without fixed two-decimal formatting.
 
 ## 8. Test cases and sample output
 
@@ -65,7 +65,7 @@ See [test_cases.md](test_cases.md). The file [screenshots/sample_output_preview.
 - `for` and `while` loops
 - `if`, `elif`, and `else`
 - Arithmetic, comparison, and logical operators
-- Numeric output formatting
+- Numeric calculations and `print()` output
 
 No imports, user-defined functions, classes, external packages, or `try-except` are used.
 
