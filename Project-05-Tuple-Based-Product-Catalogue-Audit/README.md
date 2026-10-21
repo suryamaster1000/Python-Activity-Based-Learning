@@ -28,7 +28,7 @@ Each product is stored in this order:
 These are demonstration rules because no specific shop policy was supplied:
 
 1. Product IDs should be unique.
-2. Product name and category should not be blank.
+2. Product name and category should not be empty.
 3. Price must be greater than zero.
 4. Negative stock is invalid.
 5. Stock equal to zero is reported as out of stock.
@@ -67,11 +67,11 @@ See [test_cases.md](test_cases.md). The file [screenshots/sample_output_preview.
 - Input and output with `input()` and `print()`
 - Variables and numeric types
 - Tuples and lists
-- Tuple indexing and list `append()`
+- Tuple creation, unpacking, indexing, and list `append()`
 - `if`, `elif`, and `else`
 - `for` and `while` loops
 - Comparison and logical operators
-- String methods and joining text
+- String concatenation, loops, and conditional checks
 
 No imports, user-defined functions, classes, external packages, or `try-except` are used.
 
