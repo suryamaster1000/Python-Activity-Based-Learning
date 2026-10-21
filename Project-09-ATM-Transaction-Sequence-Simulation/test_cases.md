@@ -27,7 +27,7 @@
 - Successful withdrawals: 1
 - Rejected deposit/withdrawal attempts: 1
 - Transactions recorded: 4
-- Final simulated balance: Rs. 1,300.00
+- Final simulated balance: Rs. 1300.0
 
 ## Additional tests
 
@@ -40,4 +40,4 @@
 | 6 | Choose menu option 9 | Invalid menu warning; balance unchanged |
 | 7 | Choose Exit immediately | Session ends with zero transaction records and unchanged balance |
 
-Numeric prompts expect valid numeric input. This project demonstrates transaction sequence logic only and must not be used to handle real funds.
+Amounts are displayed with Python's default numeric representation (for example, `1300.0`). Numeric prompts expect valid numeric input. This project demonstrates transaction sequence logic only and must not be used to handle real funds.
