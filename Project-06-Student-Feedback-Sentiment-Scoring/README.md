@@ -55,8 +55,8 @@ See [test_cases.md](test_cases.md). The file [screenshots/sample_output_preview.
 
 ## 8. Python concepts used
 
-- Strings and string methods: `lower()`, `replace()`, `split()`, and `strip()`
-- Lists and tuples
+- Strings and syllabus-listed methods: `lower()`, `replace()`, and `split()`
+- Lists and tuples, including tuple concatenation with `+`
 - Membership checks using `in`
 - Variables and counters
 - `if`, `elif`, and `else`
