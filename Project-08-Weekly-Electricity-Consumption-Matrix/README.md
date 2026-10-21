@@ -54,7 +54,7 @@ Open a terminal in this project folder and run:
 python weekly_electricity_consumption_matrix.py
 ~~~
 
-Enter the number of weeks, then provide seven daily consumption readings for each week.
+Enter the number of weeks, then provide seven daily consumption readings for each week. Calculated decimal values are printed without fixed two-decimal formatting.
 
 ## 8. Test cases and sample output
 
@@ -63,7 +63,7 @@ See [test_cases.md](test_cases.md). The file [screenshots/sample_output_preview.
 ## 9. Python concepts used
 
 - Two-dimensional lists (matrices)
-- Variables, numeric values, and formatting
+- Variables and numeric calculations
 - Lists and indexing
 - Nested `for` loops and `while` loops
 - `if`, `elif`, and `else`
