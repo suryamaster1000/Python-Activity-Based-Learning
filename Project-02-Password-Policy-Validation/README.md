@@ -62,7 +62,7 @@ Enter a positive number of sample passwords, then enter each sample when prompte
 
 ## 8. Test cases and actual results
 
-The program was executed locally with the cases below. All 10 expected outcomes matched the program's results.
+The same cases are also listed in the standalone [test_cases.md](test_cases.md). The repository quality workflow checks the documented program behaviour.
 
 | # | Sample input | Main case being tested | Expected result | Actual result |
 |---:|---|---|---|---|
