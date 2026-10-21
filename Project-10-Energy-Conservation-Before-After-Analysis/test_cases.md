@@ -14,10 +14,10 @@
 **Expected overall summary**
 
 - Appliances compared: 4
-- Total BEFORE changes: 52.00 kWh/day
-- Total AFTER changes: 42.00 kWh/day
-- Net daily energy reduction: 10.00 kWh/day
-- Overall reduction: 19.23%
+- Total BEFORE changes: 52.0 kWh/day
+- Total AFTER changes: 42.0 kWh/day
+- Net daily energy reduction: 10.0 kWh/day
+- Overall reduction: 19.230769230769234%
 - Appliances with reduced use: 3
 - Appliances with increased use: 1
 - Appliances with unchanged use: 0
@@ -33,4 +33,4 @@
 | 6 | Negative before or after reading | Program asks for a non-negative reading again |
 | 7 | Appliance count is 0 | Program asks for a count of at least 1 again |
 
-The program expects valid numeric input at number prompts. Entered values should describe comparable periods in kWh/day for a meaningful comparison.
+The program prints raw calculated float values rather than formatting them to fixed decimal places. The percentages in the appliance table are rounded for readability, while program output may show more digits. The program expects valid numeric input at number prompts. Entered values should describe comparable periods in kWh/day for a meaningful comparison.
