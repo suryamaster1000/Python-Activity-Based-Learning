@@ -158,7 +158,13 @@ def main() -> int:
             continue
         for match in run_command_re.finditer(text):
             target = match.group(1)
-            candidate = (ROOT / target) if target.startswith("Project-") else (file.parent / target)
+            if target.startswith("Project-"):
+                candidate = ROOT / target
+            else:
+                # Screenshot guides tell readers to run commands from the project folder,
+                # not from the screenshots subfolder containing the guide.
+                base_dir = file.parent.parent if file.parent.name.lower() == "screenshots" else file.parent
+                candidate = base_dir / target
             if not candidate.is_file():
                 bad_commands.append(f"{file.relative_to(ROOT).as_posix()} -> python {target}")
     if bad_commands:
