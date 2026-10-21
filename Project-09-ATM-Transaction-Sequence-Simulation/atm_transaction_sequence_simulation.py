@@ -19,7 +19,7 @@ while choice != "4":
     print("2. Withdraw")
     print("3. Balance enquiry")
     print("4. Exit")
-    choice = input("Choose an option (1-4): ").strip()
+    choice = input("Choose an option (1-4): ")
 
     if choice == "1":
         amount = float(input("Enter deposit amount (Rs.): "))
@@ -31,7 +31,7 @@ while choice != "4":
         else:
             balance = balance + amount
             deposit_count = deposit_count + 1
-            message = "Deposit Rs. " + format(amount, ".2f") + " | Balance Rs. " + format(balance, ".2f")
+            message = "Deposit Rs. " + str(amount) + " | Balance Rs. " + str(balance)
             print(message)
             transactions.append(message)
 
@@ -43,19 +43,19 @@ while choice != "4":
             transactions.append(message)
             declined_count = declined_count + 1
         elif amount > balance:
-            message = "Withdrawal declined: insufficient funds (requested Rs. " + format(amount, ".2f") + ", balance Rs. " + format(balance, ".2f") + ")"
+            message = "Withdrawal declined: insufficient funds (requested Rs. " + str(amount) + ", balance Rs. " + str(balance) + ")"
             print(message)
             transactions.append(message)
             declined_count = declined_count + 1
         else:
             balance = balance - amount
             withdrawal_count = withdrawal_count + 1
-            message = "Withdrawal Rs. " + format(amount, ".2f") + " | Balance Rs. " + format(balance, ".2f")
+            message = "Withdrawal Rs. " + str(amount) + " | Balance Rs. " + str(balance)
             print(message)
             transactions.append(message)
 
     elif choice == "3":
-        message = "Balance enquiry: Rs. " + format(balance, ".2f")
+        message = "Balance enquiry: Rs. " + str(balance)
         print(message)
         transactions.append(message)
 
@@ -79,5 +79,5 @@ print("Successful deposits:", deposit_count)
 print("Successful withdrawals:", withdrawal_count)
 print("Rejected deposit/withdrawal attempts:", declined_count)
 print("Transactions recorded:", len(transactions))
-print("Final simulated balance: Rs.", format(balance, ".2f"))
+print("Final simulated balance: Rs.", str(balance))
 print("\nSimulation complete. No real money or bank account was accessed.")
