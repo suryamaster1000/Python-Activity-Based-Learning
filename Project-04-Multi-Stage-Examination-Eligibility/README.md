@@ -73,7 +73,7 @@ The file [screenshots/sample_output_preview.svg](screenshots/sample_output_previ
 
 - Variables and numeric values
 - Input and output using input() and print()
-- Strings and methods such as strip() and upper()
+- String operations with `upper()`
 - Arithmetic, comparison, and logical operators
 - if, elif, and else
 - for and while loops with range()
