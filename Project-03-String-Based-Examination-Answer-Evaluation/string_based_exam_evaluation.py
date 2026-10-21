@@ -47,10 +47,10 @@ total_marks = 0
 for student_number in range(1, number_of_students + 1):
     print("\nStudent", student_number)
 
-    student_name = input("Enter student name: ").strip()
+    student_name = input("Enter student name: ")
     while student_name == "":
         print("Student name cannot be blank.")
-        student_name = input("Enter student name: ").strip()
+        student_name = input("Enter student name: ")
 
     answers_text = input(
         "Enter answers separated by spaces; use - for unanswered questions: "
