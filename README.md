@@ -1,6 +1,16 @@
 # Python Activity-Based Learning (ABL)
 
-A collection of beginner-friendly Python case studies prepared for the Python ABL assignment.
+## Student Details
+
+- **Name:** Neerukonda Surya
+- **Roll Number:** 26001332
+- **Class/Section:** CSM7
+- **Branch:** CSE (AI/ML)
+
+## Project Overview
+
+This repository contains 10 beginner-friendly Python Activity-Based Learning (ABL) projects prepared for educational purposes. The projects demonstrate Python concepts through practical examples, with source code, documentation, and test cases.
+
 
 ## Projects
 
