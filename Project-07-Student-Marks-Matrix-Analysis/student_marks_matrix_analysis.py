@@ -19,17 +19,17 @@ marks_matrix = []
 
 print("\nENTER SUBJECT NAMES")
 for j in range(subject_count):
-    subject_name = input("Subject " + str(j + 1) + ": ").strip()
+    subject_name = input("Subject " + str(j + 1) + ": ")
     while subject_name == "":
         print("Subject name cannot be blank.")
-        subject_name = input("Subject " + str(j + 1) + ": ").strip()
+        subject_name = input("Subject " + str(j + 1) + ": ")
     subject_names.append(subject_name)
 
 for i in range(student_count):
-    student_name = input("\nEnter name of student " + str(i + 1) + ": ").strip()
+    student_name = input("\nEnter name of student " + str(i + 1) + ": ")
     while student_name == "":
         print("Student name cannot be blank.")
-        student_name = input("Enter name of student " + str(i + 1) + ": ").strip()
+        student_name = input("Enter name of student " + str(i + 1) + ": ")
     student_names.append(student_name)
 
     student_marks = []
@@ -67,8 +67,8 @@ for i in range(student_count):
         status = "FAIL"
         failed_students = failed_students + 1
 
-    print(student_names[i], "| Total:", format(student_total, ".2f"),
-          "| Average:", format(student_average, ".2f"), "|", status)
+    print(student_names[i], "| Total:", student_total,
+          "| Average:", student_average, "|", status)
 
 print("\nSUBJECT-WISE ANALYSIS")
 print("---------------------")
@@ -77,8 +77,8 @@ for j in range(subject_count):
     for i in range(student_count):
         subject_total = subject_total + marks_matrix[i][j]
     subject_average = subject_total / student_count
-    print(subject_names[j], "| Total:", format(subject_total, ".2f"),
-          "| Average:", format(subject_average, ".2f"))
+    print(subject_names[j], "| Total:", subject_total,
+          "| Average:", subject_average)
 
 highest_mark = marks_matrix[0][0]
 lowest_mark = marks_matrix[0][0]
@@ -102,9 +102,9 @@ print("\nOVERALL SUMMARY")
 print("---------------")
 print("Students analysed:", student_count)
 print("Subjects analysed:", subject_count)
-print("Overall average mark:", format(grand_total / (student_count * subject_count), ".2f"))
+print("Overall average mark:", grand_total / (student_count * subject_count))
 print("Students passed all subjects:", passed_students)
 print("Students who need improvement:", failed_students)
-print("Highest mark:", format(highest_mark, ".2f"), "-", highest_student, "-", highest_subject)
-print("Lowest mark:", format(lowest_mark, ".2f"), "-", lowest_student, "-", lowest_subject)
+print("Highest mark:", highest_mark, "-", highest_student, "-", highest_subject)
+print("Lowest mark:", lowest_mark, "-", lowest_student, "-", lowest_subject)
 print("\nAnalysis complete. Pass mark is an example rule; confirm faculty requirements.")
