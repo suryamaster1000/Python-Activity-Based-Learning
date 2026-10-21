@@ -111,4 +111,8 @@ After GitHub Pages is enabled in Settings → Pages, the site should be availabl
 
 https://suryamaster1000.github.io/Python-Activity-Based-Learning/
 
+## Automated quality audit
+
+The `Repository Quality Audit` GitHub Actions workflow checks Python syntax, required project files, local Markdown/HTML links, SVG validity, documented run commands, and one sample execution for each of the 10 programs on pushes and pull requests.
+
 Student project for educational purposes.
