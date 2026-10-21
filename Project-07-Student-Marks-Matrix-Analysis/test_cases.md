@@ -38,4 +38,4 @@
 | 5 | One student and one subject | Matrix calculations still work |
 | 6 | Student count or subject count is 0 | Program asks for a value of at least 1 again |
 
-The program expects valid numeric input for counts and marks; entering text at a numeric prompt is outside this test scope.
+The table averages are rounded to two decimal places for readability. The program itself prints calculated floating-point values without fixed decimal formatting. It expects valid numeric input for counts and marks; entering text at a numeric prompt is outside this test scope.
