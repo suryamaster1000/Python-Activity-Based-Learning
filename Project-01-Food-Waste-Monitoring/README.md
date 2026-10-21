@@ -57,6 +57,8 @@ Enter whole numbers when prompted. The program uses beginner-level validation lo
 
 ## 8. Manual test cases
 
+A compact separate reference is available in [test_cases.md](test_cases.md). Detailed cases are also listed below.
+
 | Prepared | Served | Expected result |
 |---:|---:|---|
 | 100 | 95 | 5 leftovers, 5% wastage, within limit |
