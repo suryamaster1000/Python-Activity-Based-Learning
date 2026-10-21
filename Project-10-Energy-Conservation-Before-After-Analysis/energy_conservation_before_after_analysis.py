@@ -55,7 +55,7 @@ for i in range(appliance_count):
             print(appliance_names[i], "| Reduced:", difference,
                   "kWh/day | Reduction:", percent, "%")
         else:
-            print(appliance_names[i], "| Reduced:", format(difference, ".2f"),
+            print(appliance_names[i], "| Reduced:", difference,
                   "kWh/day | Percentage unavailable (before reading was zero)")
     elif difference < 0:
         increased_count = increased_count + 1
@@ -63,9 +63,9 @@ for i in range(appliance_count):
         if before_units > 0:
             percent = (increase / before_units) * 100
             print(appliance_names[i], "| Increased:", increase,
-                  "kWh/day | Increase:", format(percent, ".2f"), "%")
+                  "kWh/day | Increase:", percent, "%")
         else:
-            print(appliance_names[i], "| Increased:", format(increase, ".2f"),
+            print(appliance_names[i], "| Increased:", increase,
                   "kWh/day | Percentage unavailable (before reading was zero)")
     else:
         unchanged_count = unchanged_count + 1
@@ -87,8 +87,8 @@ if net_reduction > 0:
     else:
         print("Overall percentage reduction unavailable because the before total was zero.")
 elif net_reduction < 0:
-    net_increase = abs(net_reduction)
-    print("Net daily energy increase:", format(net_increase, ".2f"), "kWh/day")
+    net_increase = 0 - net_reduction
+    print("Net daily energy increase:", net_increase, "kWh/day")
     if before_total > 0:
         increase_percent = (net_increase / before_total) * 100
         print("Overall increase:", increase_percent, "%")
