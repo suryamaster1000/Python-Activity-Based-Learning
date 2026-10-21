@@ -4,39 +4,83 @@
 **Language:** Python 3
 
 ## 1. Problem statement
-A college may require students to satisfy several conditions before being permitted to take an examination. This program checks attendance, laboratory completion, internal marks, and fee clearance. It reports whether each student meets the assumed requirements and lists any conditions that remain unmet.
+
+Before a student can appear for a final examination, an institution may need to check attendance, laboratory completion, internal assessment marks, and fee clearance. This program checks these requirements for multiple students and reports whether each student is eligible. For students who are not eligible, it lists every requirement that has not been met.
 
 ## 2. Objectives
-- Check multiple examination eligibility conditions.
-- Practise if statements, loops, comparisons, input/output, and lists.
-- Display every unmet condition rather than only one.
-- Store and summarize results for multiple students.
 
-## 3. Assumptions
-The case-study title does not specify exact college rules. For demonstration, this project assumes:
-- Attendance must be at least 75%.
-- At least one required laboratory exercise must be completed.
-- Internal marks must be at least 40 out of 100.
-- Fees must be cleared.
-- A student is eligible only when all four conditions are satisfied.
-These are example rules, not an official university policy. Use faculty-approved rules if provided. Numeric fields expect valid numeric input.
+- Check attendance against a minimum threshold.
+- Check whether all required laboratory activities are completed.
+- Check internal marks against a minimum score.
+- Check whether required fees are cleared.
+- Report all unmet requirements, not only the first one.
+- Summarise how many students are eligible and not eligible.
 
-## 4. Algorithm and pseudocode
+## 3. Assumptions and eligibility rules
+
+The case-study description does not specify exact thresholds. This educational implementation uses these documented assumptions, which must be changed if faculty provides a different policy:
+
+1. Minimum attendance is 75%.
+2. All required laboratory activities must be completed.
+3. Internal assessment must be at least 20 marks out of 50.
+4. Required fees must be cleared.
+5. A student is eligible only when all four requirements are met.
+6. Attendance must be a whole-number percentage from 0 through 100.
+7. Internal marks must be a whole number from 0 through 50.
+8. Laboratory completion and fee status are entered as Y or N; lowercase y/n is also accepted.
+9. Numeric prompts expect numeric input. Exception handling is omitted to remain within the beginner-level syllabus scope.
+
+**These are sample academic rules, not an official university policy.** Confirm the actual thresholds with your faculty before treating the result as an official eligibility decision.
+
+## 4. Decision logic
+
+A student is eligible when all of the following are true:
+
+- Attendance is at least 75%.
+- Laboratory activities are completed.
+- Internal marks are at least 20 out of 50.
+- Required fees are cleared.
+
+The program checks each condition independently, so one student can receive more than one reason for being not eligible.
+
+## 5. Algorithm and pseudocode
+
 See [algorithm-pseudocode.md](algorithm-pseudocode.md).
 
-## 5. Flowchart
-Open [flowchart.svg](flowchart.svg).
+## 6. Flowchart
 
-## 6. How to run
+![Multi-Stage Examination Eligibility System flowchart](flowchart.svg)
+
+Open [flowchart.svg](flowchart.svg) to view it separately.
+
+## 7. How to run
+
 Open a terminal in this folder and run:
-    python multi_stage_exam_eligibility.py
-Enter each student's name, attendance percentage, completed lab count, internal marks, and fee-clearance status (yes or no).
 
-## 7. Test cases and output
-See [test_cases.md](test_cases.md). The file [screenshots/sample_output_preview.svg](screenshots/sample_output_preview.svg) is a designed preview, not a raw terminal screenshot. Follow [screenshots/README.md](screenshots/README.md) to capture genuine terminal screenshots after running the program.
+~~~text
+python eligibility_checker.py
+~~~
 
-## 8. Python concepts
-Variables, input(), print(), int(), float(), strip(), lower(), arithmetic, comparison and logical operators, if/else, while and for loops, range(), lists, and append(). No imports, functions, classes, external packages, or try-except are used.
+Enter the student count, then enter each student's name, attendance, laboratory status, internal marks, and fee status.
 
-## 9. Conclusion
-This project demonstrates how multiple conditions can determine examination eligibility and how clear messages can show students which requirements need attention.
+## 8. Test cases and sample output
+
+See [test_cases.md](test_cases.md). The standard test includes eligible students at and above the assumed thresholds, a student below the attendance threshold, and a student who has incomplete laboratory work and low internal marks.
+
+The file [screenshots/sample_output_preview.svg](screenshots/sample_output_preview.svg) is a designed summary of the standard run, not a raw terminal screenshot. See [screenshots/README.md](screenshots/README.md) for instructions to capture actual terminal screenshots from your computer.
+
+## 9. Python concepts used
+
+- Variables and numeric values
+- Input and output using input() and print()
+- Strings and methods such as strip() and upper()
+- Arithmetic, comparison, and logical operators
+- if, elif, and else
+- for and while loops with range()
+- Lists, nested lists, append(), and list indexing
+
+The program does not use imports, user-defined functions, classes, external packages, or exception handling.
+
+## 10. Conclusion
+
+This project demonstrates how several academic conditions can be checked independently and combined into one eligibility decision. It practises conditions, loops, lists, input validation, and clear explanation of unmet requirements using beginner-level Python.
