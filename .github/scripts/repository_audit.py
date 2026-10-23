@@ -165,6 +165,13 @@ def main() -> int:
                 # not from the screenshots subfolder containing the guide.
                 base_dir = file.parent.parent if file.parent.name.lower() == "screenshots" else file.parent
                 candidate = base_dir / target
+            # STUDENT_README.md intentionally uses a generic example filename and
+            # tells readers to run it from the chosen project folder. Resolve that
+            # example only when exactly one project contains the named script.
+            if not candidate.is_file() and file.relative_to(ROOT).as_posix() == "STUDENT_README.md" and "/" not in target:
+                matches = list(ROOT.glob(f"Project-*/{target}"))
+                if len(matches) == 1:
+                    candidate = matches[0]
             if not candidate.is_file():
                 bad_commands.append(f"{file.relative_to(ROOT).as_posix()} -> python {target}")
     if bad_commands:
